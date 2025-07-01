@@ -1,8 +1,7 @@
-// src/components/ProductList.tsx
 import React from 'react';
 import { Box } from '@mui/material';
 import type {Product} from '../types/product';
-import ProductCard from './ProductCard'; // Importa nosso novo componente
+import ProductCard from './ProductCard';
 
 interface ProductListProps {
     products: Product[];
