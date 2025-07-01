@@ -1,9 +1,5 @@
-// src/api/ProdutoService.ts
 import api from './api';
-import type {Product} from '../types/product'; // Importe o tipo unificado
-// Importe o tipo unificado
-
-// A interface Product agora fica em types/product.ts para ser reutilizada
+import type {Product} from '../types/product';
 
 export type ProductPayload = Omit<Product, 'id' | 'stockStatus' | 'categoria'> & {
     categoria: { id: number };
@@ -36,7 +32,6 @@ export const getProdutosComEstoqueBaixo = async (): Promise<Product[]> => {
 }
 
 export const getProdutosVencidos = async (): Promise<Product[]> => {
-    // No seu backend, "vencidos" pode ser o que chamamos de "sem estoque" na UI.
     const response = await api.get('/produtos/alertas/vencidos');
     return response.data;
 }
