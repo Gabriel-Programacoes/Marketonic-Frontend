@@ -1,6 +1,5 @@
 import type {Categoria} from "../api/CategoriaService";
 
-// Interface alinhada com o backend (Produto.java) e com a UI
 export interface Product {
     id: number;
     nome: string;
@@ -9,7 +8,6 @@ export interface Product {
     quantidadeEmEstoque: number;
     dataDeValidade: string;
     categoria: Categoria;
-    // Opcional: para controle de UI
     stockStatus?: "Em estoque" | "Estoque baixo" | "Sem estoque";
 }
 
@@ -17,6 +15,6 @@ export interface Product {
 export interface DashboardStats {
     totalProdutos: number;
     estoqueBaixo: number;
-    semEstoque: number; // Produtos vencidos podem ser considerados "sem estoque" para venda
+    semEstoque: number;
     valorTotalEstoque: number;
 }
