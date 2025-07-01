@@ -1,7 +1,5 @@
 # Marketonic - Frontend
 
-![Interface do Marketonic](https://i.imgur.com/bda627.jpg)
-
 Este é o repositório do frontend para o projeto **Marketonic**, um dashboard moderno e responsivo para gerenciamento de produtos e categorias de supermercado. A aplicação foi construída com React e se conecta a uma API backend desenvolvida em Spring Boot.
 
 ## ✨ Funcionalidades
@@ -39,7 +37,7 @@ Siga os passos abaixo para executar o projeto em seu ambiente local:
 
 **1. Clone o repositório:**
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO_FRONTEND>
+git clone https://github.com/Gabriel-Programacoes/Marketonic-Frontend.git
 ```
 
 **2. Acesse a pasta do projeto:**
