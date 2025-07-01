@@ -1,6 +1,5 @@
 import api from './api';
 
-// Baseado no seu model Categoria.java
 export interface Categoria {
     id: number;
     nome: string;
@@ -15,6 +14,3 @@ export const createCategoria = async (categoria: { nome: string }): Promise<Cate
     const response = await api.post('/categorias', categoria);
     return response.data;
 };
-
-// Você pode adicionar aqui as funções para atualizar e deletar,
-// seguindo a estrutura do seu CategoriaController.java
