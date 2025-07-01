@@ -1,4 +1,3 @@
-// src/components/ProductCard.tsx
 import React from 'react';
 import { Box, Typography, Paper, IconButton, Chip } from '@mui/material';
 import { Edit, Delete } from '@mui/icons-material';
