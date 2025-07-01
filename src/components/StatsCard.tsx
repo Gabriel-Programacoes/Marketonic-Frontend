@@ -1,4 +1,3 @@
-// src/components/StatsCard.tsx
 import React from 'react';
 import { Card, CardContent, Typography, Box } from '@mui/material';
 import { Inventory2, Warning, NoStroller, AttachMoney } from '@mui/icons-material';
